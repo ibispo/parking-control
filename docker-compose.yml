@@ -1,0 +1,23 @@
+version: "3"
+services:
+  packing-control:
+    image: parking-control
+    ports:
+      - "8080:8080"
+    networks:
+      - parking-mysql
+    depends_on:
+      - localhost
+ 
+  localhost:
+    image: mysql
+    container_name: "park-mysql"
+    networks:
+      - parking-mysql
+    environment:
+      - MYSQL_DATABASE=parking-control-db
+      - MYSQL_ROOT_PASSWORD=L1deranc@
+      
+
+networks:
+  parking-mysql: 

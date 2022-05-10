@@ -1,0 +1,78 @@
+echo "# parking-control" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ibispo/parking-control.git
+git push -u origin main
+
+
+#####################
+
+
+
+git remote add origin https://github.com/ibispo/parking-control.git
+git branch -M main
+git push -u origin main
+
+
+-------------------------------------
+
+
+[
+    {
+        "id": "7982fabd-61be-4de6-b60d-d12ce1e97c1e",
+        "parkingSpotNumber": "63C",
+        "licencePlateCar": "AHW8C10",
+        "brandCar": "Dodge",
+        "modelCar": "Journey",
+        "colorCar": "White",
+        "registrationDate": "2022-03-19T16:47:05.72034",
+        "responsibleName": "Nego Lindo Bispo 2",
+        "apartment": "63",
+        "block": "C"
+    },
+    {
+        "id": "ec621740-e867-4dac-a7b3-7b15e7cb26c5",
+        "parkingSpotNumber": "62C",
+        "licencePlateCar": "PIH8C10",
+        "brandCar": "Dodge",
+        "modelCar": "Journey",
+        "colorCar": "White",
+        "registrationDate": "2022-03-19T16:22:12.674023",
+        "responsibleName": "Nego Lindo Bispo",
+        "apartment": "62",
+        "block": "C"
+    }
+]
+
+
+-------------------------
+
+		"parkingSpotNumber": "62C",
+        "licencePlateCar": "PIH8C10",
+        "brandCar": "Dodge",
+        "modelCar": "Journey",
+        "colorCar": "White",
+        "responsibleName": "Nego Lindo Bispo",
+        "apartment": "62",
+        "block": "C"
+
+		
+        "parkingSpotNumber": "42B",
+        "licencePlateCar": "AAA8C10",
+        "brandCar": "Fiat",
+        "modelCar": "Toro",
+        "colorCar": "Red",
+        "responsibleName": "Irra Bispo Filho",
+        "apartment": "42",
+        "block": "B"		
+		
+		
+
+--------------
+
+D:\workspace-sts-3.9.12\parking-control>docker build -t parking-control .
+error during connect: This error may indicate that the docker daemon is not running.: 
+Post "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&shmsize=0&t=parking-control&target=&ulimits=null&version=1": 
+open //./pipe/docker_engine: The system cannot find the file specified.
